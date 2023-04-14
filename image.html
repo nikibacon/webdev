@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Image Search</title>
+  <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+  <script>
+    function gotoimagepage() {
+      window.location.href = "index.html";
+    }
+
+
+    // const searchform = document.getElementById("search-form");
+    // searchform.addEventListener('submit', (event) => {
+    //   const query = event.target.elements.q.value;
+    //   const searchurl = `https://www.google.com/search?q=${query}&tbm=isch`;
+    //   searchform.action = searchurl;
+    // });
+
+  </script>
+
+  <div class="search-container">
+    <form id="search-form" action="https://google.com/search">
+      <input type="text" name="q">
+      <input type="hidden" name="tbm" value="isch">
+      <input type="submit" value="Image">
+    </form>
+    <button class="image-button" onclick=gotoimagepage()>Search</button>
+  </div>
+
+
+
+</body>
+
+</html>

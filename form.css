@@ -1,8 +1,61 @@
-form {
+@charset "UTF-8";
+.search-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: aqua;
+  height: 100vh;
+}
+.search-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 600px;
+  margin: 20px auto;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.search-container form input[type=text] {
+  flex: 1;
+  height: 100%;
+  border: none;
+  margin: 80px 0;
+  border-radius: 10px;
+  padding: 0 20px;
+  background-color: transparent;
+  outline: none;
+}
+.search-container form input[type=submit] {
+  height: 100%;
+  width: 100px;
+  background-color: #4285f4;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+.search-container .image-button {
+  position: absolute;
+  /* 使用絕對定位 */
+  top: 10px;
+  /* 將按鈕移至上方 */
+  right: 20px;
+  /* 將按鈕移至右側 */
+  height: 50px;
+  padding: 0 20px;
+  background-color: #4285f4;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+form:hover {
+  width: 700px;
 }
 
 /*# sourceMappingURL=form.css.map */

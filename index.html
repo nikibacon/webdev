@@ -8,10 +8,18 @@
 </head>
 
 <body>
-    <form action="https://google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-    </form>
+    <script>
+        function gotoimagepage() {
+            window.location.href = "image.html";
+        }
+    </script>
+    <div class="search-container">
+        <form action="https://google.com/search">
+            <input type="text" name="q">
+            <input type="submit" name="btnK" value="Google">
+        </form>
+        <button class="image-button" onclick=gotoimagepage()>Image Search</button>
+    </div>
 </body>
 
 </html>
